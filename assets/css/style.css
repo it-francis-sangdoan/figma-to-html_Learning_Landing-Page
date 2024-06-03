@@ -561,3 +561,119 @@ a {
     height: 440px;
     border-radius: 20px;
 }
+
+/* our blog */
+.our-blog {
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #FFFCF4;
+}
+
+.our-blog .blog-top{
+    text-align: center;
+}
+
+.our-blog .blog-top .description{
+    color: #696262;
+    width: 35%;
+    font-size: 1.6rem;
+    margin: 16px auto 0;
+    line-height: 1.75; /* 175% */
+}
+
+.our-blog .blog-lists{
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.blog-lists .blog-item {
+    width: calc(33.33% - 20px);
+    background: #FFF;
+    border-radius: 16px;
+    flex-shrink: 0;
+}
+
+.blog-lists .blog-item:hover{
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.blog-lists .blog-item .thumbnail {
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.blog-lists .blog-item .info {
+    padding: 20px 20px 28px;
+}
+
+.blog-lists .blog-item .date{
+    display: inline-flex;
+    align-items: center;
+    color: #5F5B53;
+    font-size: 1.4rem;
+    line-height: 1.86; /* 185.714% */
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.blog-lists .blog-item .date::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    margin-right: 4px;
+}
+
+.blog-lists .blog-item .date::after{
+    content: "";
+    right: -27px;
+    height: 1px;
+    display: inline-block;
+    border-radius: 0.5px;
+    background: #E2DFDA;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.blog-lists .blog-item .title{
+    color: #171100;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.blog-lists .blog-item .btn-read-more{
+    margin-top: 12px;
+    font-size: 1.4rem;
+}
+
+.blog-lists .blog-item .btn-read-more:hover{
+    background-color: var(--primary-color);
+}
+
+.our-blog .dots{
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin-top: 38px;
+}
+
+.our-blog .dots .dot{
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: #5F5B53;
+    cursor: pointer;
+}
+
+.our-blog .dots .dot.active{
+    background: var(--primary-color);
+    cursor: default;
+}
